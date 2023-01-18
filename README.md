@@ -1,27 +1,23 @@
-# AngularAPI
+# Cadastro Tanque de Guerra
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.5.
+Este projeto tem como objetivo criar uma aplicação web para cadastro de tanques de guerra. A aplicação foi desenvolvida utilizando Angular no frontend e Dotnet no backend.
 
-## Development server
+## Funcionalidades
+Cadastro de tanques com informações como nome, modelo e nação de origem.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Listagem de todos os tanques cadastrados. (A ser implementado)
 
-## Code scaffolding
+Edição e exclusão de tanques já cadastrados. (A ser implementado)
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Tecnologias Utilizadas
+Angular: Utilizado para desenvolvimento do frontend da aplicação.
 
-## Build
+Dotnet: Utilizado para desenvolvimento do backend da aplicação.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+Entity Framework: Utilizado para gerenciamento do banco de dados.
 
-## Running unit tests
+## Avisos
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Para rodar a aplicação em conjunto com a API, será necessário realizar as seguintes ações:
 
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Navegar para o arquivo localizado em: "APIAngular\appsettings.json", alterar a ConnectionString para seu banco de dados local.
