@@ -6,7 +6,8 @@ import { TankRegisterComponent } from './components/tank-register/tank-register.
 const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full'},
   { path: 'Home', component: AppComponent },
-  { path: 'TankRegister', component: TankRegisterComponent }
+  { path: 'TankRegister', component: TankRegisterComponent },
+  { path: 'TankRegister/:id', component: TankRegisterComponent }
 ];
 
 @NgModule({

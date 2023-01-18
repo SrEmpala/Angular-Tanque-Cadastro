@@ -9,7 +9,7 @@ namespace APIAngular.Data
     {
        public TankContext(DbContextOptions<TankContext> options) : base(options) { }
 
-       public DbSet<TankModel> Tank { get; set; }
+       public DbSet<TankModel>? Tank { get; set; }
 
         protected override void OnModelCreating(ModelBuilder tankBuilder)
         {

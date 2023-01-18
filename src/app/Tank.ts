@@ -1,6 +1,6 @@
 export class Tank{
-    tankId?: number;
+    id?: number;
     nome: string = '';
-    nacao: string = '';
     modelo: string = '';
+    nacao: string = '';
 }

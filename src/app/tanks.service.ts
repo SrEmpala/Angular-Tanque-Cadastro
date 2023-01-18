@@ -28,8 +28,8 @@ export class TanksService {
       return this.http.post<Tank>(this.url, tank, httpOptions); 
     }
 
-    AtualizarTank(tank: Tank) : Observable<any>{
-      return this.http.put<Tank>(this.url, tank, httpOptions);
+    AtualizarTank(tank: any) : Observable<any>{
+      return this.http.put<Tank>(`${this.url}/${tank.tankId}`, tank, httpOptions);
     } 
 
     ExcluirTank(tankId: number) : Observable<any>{
