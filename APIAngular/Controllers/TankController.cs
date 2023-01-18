@@ -37,7 +37,8 @@ namespace APIAngular.Controllers
             return Ok(tank);
         }
 
-        [HttpPut("{id}")]
+        [Route("{id}")]
+        [HttpPut]
         public async Task<ActionResult<TankModel>> Atualizar([FromBody] TankModel tankModel, int id)
         {
             tankModel.Id = id;
